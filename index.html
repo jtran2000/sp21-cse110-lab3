@@ -8,6 +8,9 @@
 <body>
     <header id="top">
         <h1 style="text-align: center;">My Journal</h1>
+        <form style="text-align: center;">
+            <button formaction="#newpost">New Post</button>
+          </form>
         <div>
             <nav>
                 <details>
@@ -105,6 +108,45 @@
             The difference between <code>&ltb&gt</b></code> and <code>&ltstrong&gt</b></code> or <code>&lti&gt</b></code> and <code>&ltem&gt</b></code> might not be visible visually, but it matters to search engine crawlers and accessibilty software.
             <br>
             <img src="upcomingassignments.PNG">
+        </section>
+        <hr>
+        <section id="newpost">
+            <h3 style="text-align: center;">New Post</h3>
+            <form style="text-align: center;">
+                <div >
+                    <input type="text" name="title" placeholder="Title">
+                </div>
+                <br>
+                <fieldset>
+                    
+                    <select>
+                        <option value="tnr">Times New Roman</option>
+                        <option value="arial">Arial</option>
+                    </select>
+                    <input type="number" value="12">
+                    <button type="button">Ordered List</button>
+                    <button type="button">Unordered List</button>
+                    <input type="file">
+                    <input list="tags">
+                    <datalist id="tags">
+                        <option value="ucsd">ucsd</option>
+                        <option value="cse110">cse110</option>
+                        <option value="doc100d">doc100d</option>
+                        <option value="ethn112c">ethn112c</option>
+                        <option value="math180b">math180b</option>
+                    </datalist>
+                    <button type="button">Add Tag</button>
+                    <input type="date">
+                </fieldset>
+                <br>
+                <div>
+                    <textarea rows="10" cols="200" placeholder="Write here..."></textarea>
+                </div>
+                <input type="checkbox" id="comments"><label for="comments">Allow Comments</label>
+                <input type="radio" id="public" name="visibility"><label for="public">Make Public</label>
+                <input type="radio" id="private" name="visibility"><label for="private">Make Private</label>
+                <input type="submit">
+            </form>
         </section>
         <hr>
     </main>
