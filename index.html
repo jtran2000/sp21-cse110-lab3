@@ -4,14 +4,20 @@
         <title>My Journal</title>
         <meta name="author" content="Julius Tran">
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="stylesheet.css" rel="stylesheet"/>
+        <style>
+            body {
+                background-color:  #54a6ffff;
+            }
+        </style>
     </head>
     <body>
         <header id="top">
-            <h1 style="text-align: center;">My Journal</h1>
+            <h1>My Journal</h1>
+            <p id="wideMessage">If you see this you have an extra wide screen</p>
             <form style="text-align: center;">
-                <button formaction="#newpost">New Post</button>
+                <button formaction="#newpost">New Entry</button>
             </form>
-            <div>
                 <nav>
                     <details>
                         <summary>Jump to Date</summary>
@@ -24,12 +30,11 @@
                     </details>
     
                 </nav>
-            </div>
         </header>
         <main>
             <hr>
             <section id ="2021-04-07">
-                <h2 style="text-align: center;"><time datetime="2021-04-07">April 7</time></h2>
+                <h2><time datetime="2021-04-07">April 7</time></h2>
                 <h3>Events</h3>
                 <ul>
                     <li>Had a boiled egg with bread for breakfast</li>
@@ -37,7 +42,7 @@
                     <li>Drove around the neighborhood</li>
                 </ul>
                 <h3>Accomplished Tasks</h3>
-                <ul>
+                <ul class="accomplished">
                     <li>Went to ETHN 112C Office Hours</li>
                     <li>Got assigned to my CSE 110 group and said hello in the Slack</li>
                 </ul>
@@ -52,11 +57,21 @@
                 <h3 >Summary of the Day</h3>
                 <p>This was a ordinary Wednesday studying at UC Socially Distant. Also, I am going to put an audio file here.</p>
                 <audio controls src="sd_0.wav"></audio>
-
+                <div id="flex">
+                    <div>Hello</div>
+                    <div>World</div>
+                    <div>This is using flex</div>
+                </div>
+                <div id="grid">
+                    <div>Hello</div>
+                    <div>World</div>
+                    <div>This is</div>
+                    <div>a grid</div>
+                </div>
             </section>
             <hr>
             <section id ="2021-04-08">
-                <h2 style="text-align: center;"><time datetime="2021-04-08">April 8</time></h2>
+                <h2><time datetime="2021-04-08">April 8</time></h2>
                 <h3>Events</h3>
                 <ul>
                     <li>Had French Toast for breakfast</li>
@@ -65,7 +80,7 @@
                     <li>Somebody from the city government came to check our water meter</li>
                 </ul>
                 <h3>Accomplished Tasks</h3>
-                <ul>
+                <ul class="accomplished">
                     <li>CSE 110 Professor Greeting Assignment</li>
                     <li>ETHN 112C Assignments</li>
                 </ul>
@@ -84,14 +99,14 @@
             </section>
             <hr>
             <section id ="2021-04-09">
-                <h2 style="text-align: center;"><time datetime="2021-04-09">April 9</time></h2>
+                <h2><time datetime="2021-04-09">April 9</time></h2>
                 <h3>Events</h3>
                 <ul>
                     <li>Had a chocolate muffin for breakfast</li>
                     <li>Microwave chicken and rice for lunch</li>
                 </ul>
                 <h3>Accomplished Tasks</h3>
-                <ul>
+                <ul class="accomplished">
                     <li>CSE 110 Lab 2</li>
                     <li>DOC100D Assignments</li>
                 </ul>
@@ -110,9 +125,9 @@
                 <img src="upcomingassignments.PNG" alt="upcomingassignments">
             </section>
             <hr>
-            <section id="newpost">
-                <h3 style="text-align: center;">New Post</h3>
-                <form style="text-align: center;">
+            <section style="text-align: center;" id="newpost">
+                <h2>New Entry</h2>
+                <form >
                     <div >
                         <input type="text" name="title" placeholder="Title">
                     </div>
@@ -142,6 +157,7 @@
                     <div>
                         <textarea rows="10" cols="200" placeholder="Write here..."></textarea>
                     </div>
+
                     <input type="checkbox" id="comments"><label for="comments">Allow Comments</label>
                     <input type="radio" id="public" name="visibility"><label for="public">Make Public</label>
                     <input type="radio" id="private" name="visibility"><label for="private">Make Private</label>

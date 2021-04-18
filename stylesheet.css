@@ -1,0 +1,105 @@
+* {
+    color: black;
+    position: static;
+}
+
+@media (max-width: 2000px) {
+    #wideMessage {
+        display: none;
+        position: absolute;
+    }
+    
+}
+
+form + nav {
+    background-color: grey;
+    margin-top: 1em
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#flex div {
+    flex-basis: content;
+    height: 40px;
+    max-width: 100px;
+    margin: 1rem 1rem 1rem 1rem;
+    border: 0.1em solid black;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 50px;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+#grid div {
+    
+    height: 40px;
+    border: 0.1em solid black;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 1% 1% 1% 1%;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    padding-left: 1mm;
+    padding-right: 1mm;
+
+}
+
+h2 ~ h3 {
+    color: hsla(0, 0%, 40%, 1);
+}
+
+
+
+nav a {
+    display:inline-block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+hr {
+    border-color: gold;
+}
+
+h3 {
+    margin: auto;
+}
+
+/*Apparently CSS requires IDs starting with digits to be escaped*/
+/* #\32 021-04-07 > h2{
+    display: flex;
+    color: red;
+
+} */
+.accomplished > li{
+    color: rgb(127, 255, 10);
+}
+
+/* ol {
+    display: flex;
+} */
+
+ol > li:hover{
+    text-decoration: line-through;
+}
+
+input:active {
+    border-width: 3pt;
+    border-radius: 2px;
+    padding: 3pt 3pt 3pt 3pt;
+}
+
+[type="submit"] {
+    background-color: green;
+}
