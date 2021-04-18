@@ -1,6 +1,16 @@
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-VariableFont_wght.ttf");
+}
+
+
 * {
     color: black;
     position: static;
+}
+
+h1, h2, h3, p, div, li {
+    font-family:"Antonio";
 }
 
 @media (max-width: 2000px) {
